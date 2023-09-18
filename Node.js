@@ -1,8 +1,15 @@
-class Node {
+export class Node {
   
-  constructor () {
-    this.value = null;
-    this.nextNode = null;
+  value = null;
+  nextNode = null;
+
+  constructor (value, nextNode) {
+    if (value !== undefined) {
+      this.value = value;
+    }
+    if (nextNode !== undefined) {
+      this.nextNode = nextNode;
+    }
   }
 
   get value() {
